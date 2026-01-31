@@ -82,3 +82,14 @@ if st.button("💖 Get Recommendations"):
             ]].head(3)
         )
 
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #fff0f5;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
