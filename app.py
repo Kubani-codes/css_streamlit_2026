@@ -9,9 +9,9 @@ import streamlit as st
 import pandas as pd
 
 # App title
-st.title("💄 GlowGuide – Beauty Powered by Data")
+st.title("💄 GlowGuide Beauty powered by Grafty")
 
-st.write("Find makeup & skincare products that match your skin needs ✨")
+st.write("Find makeup & skincare products that match your skin needs ")
 
 # Load dataset
 data = pd.read_csv("beauty_products.csv")
@@ -34,8 +34,8 @@ category = st.selectbox(
 
 budget = st.slider(
     "Select your budget in Rands:",
-    min_value=100,
-    max_value=300,
+    min_value=50,
+    max_value=1000,
     step=10
 )
 
@@ -92,4 +92,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
