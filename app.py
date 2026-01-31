@@ -33,7 +33,7 @@ category = st.selectbox(
 )
 
 budget = st.slider(
-    "Select your budget:",
+    "Select your budget in Rands:",
     min_value=100,
     max_value=300,
     step=10
@@ -81,3 +81,4 @@ if st.button("💖 Get Recommendations"):
                 "product_name", "price", "rating"
             ]].head(3)
         )
+
