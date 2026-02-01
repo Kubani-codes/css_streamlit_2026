@@ -13,7 +13,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: #D63384;
+        background-color: #fff0f5;
     }
     </style>
     """,
@@ -25,12 +25,9 @@ st.markdown(
 st.title("💄 GlowGuide Beauty powered by Grafty")
 
 st.markdown(
-    "<h4 style='text-align: center; color: #d63384;'>✨ Discover products made just for you ✨</h4>",
+    "<h4 style='text-align: center; color: #fff0f5;'>✨ Discover products made just for you ✨</h4>",
     unsafe_allow_html=True
 )
-
-
-st.image("beauty_banner.jpg", use_container_width=True)
 
 st.write("Find makeup & skincare products that match your skin needs ")
 
@@ -104,6 +101,7 @@ if st.button("💖 Get Recommendations"):
                 "product_name", "price", "rating"
             ]].head(3)
         )
+
 
 
 
