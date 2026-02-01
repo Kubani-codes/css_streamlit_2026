@@ -13,7 +13,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: #fff0f5;
+        background-color: #D63384;
     }
     </style>
     """,
@@ -94,6 +94,7 @@ if st.button("💖 Get Recommendations"):
                 "product_name", "price", "rating"
             ]].head(3)
         )
+
 
 
 
