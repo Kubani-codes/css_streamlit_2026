@@ -24,6 +24,14 @@ st.markdown(
 # App title
 st.title("💄 GlowGuide Beauty powered by Grafty")
 
+st.markdown(
+    "<h4 style='text-align: center; color: #d63384;'>✨ Discover products made just for you ✨</h4>",
+    unsafe_allow_html=True
+)
+
+
+st.image("beauty_banner.jpg", use_container_width=True)
+
 st.write("Find makeup & skincare products that match your skin needs ")
 
 # Load dataset
@@ -84,6 +92,8 @@ if st.button("💖 Get Recommendations"):
     )
 
     # Show top 3
+    st.image("https://cdn-icons-png.flaticon.com/512/3081/3081559.png", width=100)
+
     st.subheader("🌸 Top Recommendations for You")
 
     if recommendations.empty:
@@ -94,6 +104,7 @@ if st.button("💖 Get Recommendations"):
                 "product_name", "price", "rating"
             ]].head(3)
         )
+
 
 
 
