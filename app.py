@@ -8,6 +8,19 @@ Created on Sat Jan 31 20:53:48 2026
 import streamlit as st
 import pandas as pd
 
+# Girly background styling
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #fff0f5;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # App title
 st.title("💄 GlowGuide Beauty powered by Grafty")
 
@@ -82,15 +95,7 @@ if st.button("💖 Get Recommendations"):
             ]].head(3)
         )
 
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #fff0f5;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
+
 
 
