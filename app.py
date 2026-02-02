@@ -8,6 +8,13 @@ Created on Sat Jan 31 20:53:48 2026
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(
+    page_title="GlowGuide Beauty App",
+    page_icon="💄",
+    layout="centered"
+)
+
+
 # Girly background styling
 st.markdown(
     """
@@ -101,6 +108,7 @@ if st.button("💖 Get Recommendations"):
                 "product_name", "price", "rating"
             ]].head(3)
         )
+
 
 
 
